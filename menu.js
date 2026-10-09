@@ -1,8 +1,3 @@
-/* stage 7·5a · slide: s6-render · indicators 2, 7 · end state */
-/* menu.js — index.html only */
-
-/* ===== 1. The menu as data (§6) ===== */
-
 const dishes = [
   {
     name: "Falafel",
@@ -20,13 +15,11 @@ const dishes = [
   }
 ];
 
-/* ===== 2. One rule for how a price looks (§6) ===== */
 
 function priceLabel(price) {
   return "$" + price;
 }
 
-/* ===== 3. Build one card and one table row from one dish (§6) ===== */
 
 function makeCard(dish) {
   const card = document.createElement("div");
@@ -65,7 +58,6 @@ function makeRow(dish) {
   return row;
 }
 
-/* ===== 4. Put every dish on the page (§6) ===== */
 
 const dishList = document.querySelector("#dishes");
 const priceList = document.querySelector("#price-list");
