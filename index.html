@@ -6,7 +6,6 @@
     <meta name="author" content="John Doe">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <script src="menu.js" defer></script>
   </head>
   <body>
     <header>
@@ -26,13 +25,33 @@
     <main>
       <h1>Our Menu</h1>
 
-      <div id="dishes"></div>
+      <div class="dish">
+        <img src="falafel.jpeg" width="240" height="135" alt="A falafel">
+        <h2>Falafel</h2>
+        <p>Chickpea, herbs, and spices</p>
+        <p class="price">$10</p>
+      </div>
+
+      <div class="dish">
+        <img src="salad.jpeg" width="240" height="135" alt="A pasta salad">
+        <h2>Pasta Salad</h2>
+        <p>Lettuce, vegetables, and mozzarella</p>
+        <p class="price">$12</p>
+      </div>
 
       <h2>Price list</h2>
-      <table id="price-list">
+      <table>
         <tr>
           <th>Dish</th>
           <th>Price</th>
+        </tr>
+        <tr>
+          <td>Falafel</td>
+          <td>$10</td>
+        </tr>
+        <tr>
+          <td>Pasta Salad</td>
+          <td>$12</td>
         </tr>
       </table>
     </main>
